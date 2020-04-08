@@ -1,0 +1,60 @@
+/* Colors */
+.bg-powder {
+    background-color: #bfd8d2;
+}
+
+.bg-warm {
+    background-color: #df744a;
+}
+
+.bg-peach {
+    background-color: #fedcd2;
+}
+
+.bg-lemon {
+    background-color: #dcb239;
+}
+
+.bg-color1 {
+    background-color: #ffe8e5;
+}
+
+.bg-color2 {
+    background-color: #f6cfca;
+}
+
+.bg-color3 {
+    background-color: #eabfb9;
+}
+
+.bg-color4 {
+    background-color: #b86b77;
+}
+
+/* Font */
+.text1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white
+}
+
+.text1:hover {
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.text2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white
+}
+
+/* Web Component */
+#navbar:hover{
+    opacity: 0.9;
+}
+

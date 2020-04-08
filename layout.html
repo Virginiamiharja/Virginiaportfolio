@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virginia Miharja's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://kit.fontawesome.com/e502a02e58.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- Nav bar -->
+        <div id="navbar" class="row" >
+            <div class="d-flex col-12 col-sm-6 col-md-7 bg-color4 justify-content-center justify-content-sm-start">
+                <a href="#aboutMe" class="text1 m-2 ml-sm-4 p-1"> About </a>
+                <a href="#career" onclick="showEducation()" class="text1 m-2 p-1"> Education </a>
+                <a href="#career" onclick="showExperiences()" class="text1 m-2 p-1"> Career </a>
+                <a href="#career" onclick="showInterests()" class="text1 m-2 p-1"> Interests </a>
+            </div>
+            <div class="d-flex col-12 col-sm-6 col-md-5 bg-color4 justify-content-center justify-content-sm-end"> 
+                <a href="https://www.facebook.com/" class="text1 m-2 p-1"> <i class="fab fa-facebook-square"></i> </a>
+                <a href="https://www.instagram.com/" class="text1 m-2 p-1"> <i class="fab fa-instagram"></i> </a>
+                <a href="https://twitter.com/" class="text1 m-2 p-1"> <i class="fab fa-twitter"></i> </a>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div id="aboutMe" class="row ml-sm-4 mr-sm-4 mt-3 mb-3 mt-sm-5 mb-sm-5">
+            <img src="img/wallpaper.png" style="width: 100%" class="col-12 col-sm-6" alt="">
+            <div class="d-flex flex-column col-12 col-sm-6 justify-content-center align-items-center">
+                <h1 class="mt-2 mt-sm-0" id="titleAboutMe" onmouseover="chgTitle()" onmouseout="chgTitle1()" style="font-family: Arial, Helvetica, sans-serif"> ABOUT ME </h1> 
+                <div id="descAboutMe" onmouseover="chgDesc()" onmouseout="chgDesc1()" class="text-justify" style="letter-spacing: 0.2px;"> 
+                    Kendall Nicole Jenner (born November 3, 1995) is an American model and media personality. She is best known for her role in the reality television show 
+                    Keeping Up with the Kardashians. After working in commercial print ad campaigns and photoshoots, Jenner had breakout seasons in 2014 and 2015, 
+                    walking the runways for high-fashion designers during the New York, Milan, and Paris fashion weeks. Jenner has done multiple editorials and cover shoots for 
+                    LOVE and various international Vogue editions, and is a brand ambassador for Estée Lauder. Jenner made her debut at No. 16 on Forbes magazine's 2015 list of top-earning models, 
+                    with an estimated annual income of US$4 million. In 2017, Jenner was named the world's highest-paid model by Forbes.
+                </div>
+            </div>
+        </div>
+
+        <div id="career" class="row flex-column flex-sm-row">
+                <div class="d-flex col-12 col-sm-8 align-items-center flex-column"> 
+                    <div class="d-flex justify-content-center p-2 bg-warm" style="width: 90%" > 
+                        <div id="title" class="text2"> Modeling Career </div> 
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3" style="width: 90%;"> 
+                        <div class="d-flex justify-content-start align-items-center flex-column text2 p-3 bg-color3" style="width: 30%;"> 
+                            <div id="icon1" style="font-size: 70px" class="d-flex justify-content-center mb-3"> <img src="img/givenchy.jpg" alt="" class="mt-3" style="width: 60%"> </div>
+                            <p id="description1" class="m-3 text-center"> Marc Jacobs A/W 2014 </p>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center flex-column text2 p-3 bg-color3" style="width: 30%"> 
+                            <div id="icon2" style="font-size: 70px" class="d-flex justify-content-center mb-3"> <img src="img/versace.jpg" alt="" class="mt-3" style="width: 60%"> </div>
+                            <p id="description2" class="m-3 text-center"> Atelier Versace A/W 2015 </p>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center flex-column text2 p-3 bg-color3" style="width: 30%">  
+                                <div id="icon3" style="font-size: 70px" class="d-flex justify-content-center mb-3"> <img src="img/balmain.jpg" alt="" class="mt-3" style="width: 60%"> </div>
+                            <p id="description3" class="m-3 text-center"> Balmain A/W 2016 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="" class="d-flex col-12 col-sm-4 mt-4 mt-sm-0 justify-content-center justify-content-sm-start"> 
+                    <div class="d-flex flex-column bg-powder align-items-center" style="width: 90%; height: 368px;" > 
+                    <div class="h2 mt-3" style="color: white"> CONTACT ME</div>
+                    <form class="mt-2">
+                        <div class="form-group">
+                        <label class="text2">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                        <label class="text2">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-light text2" onclick="send()"> Send </button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Footer -->
+        <div class="row bg-color4 mt-5 justify-content-center">
+            <div class="text2 m-3"> &copy; Virginia Miharja</div>
+        </div>
+         
+    </div>
+</body>
+</html>
